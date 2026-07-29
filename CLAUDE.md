@@ -6,7 +6,7 @@ Build locally first, then migrate to production.
 ## Constraints
 
 - Theme is provided by CSU Web Services and was built for Elementor. **Do not edit theme files.**
-- All styling lives in one file, `dist/aicsu-design-system.css`, served via GitHub
+- All styling lives in one file, `docs/aicsu-design-system.css`, served via GitHub
   Pages and linked from the theme with a single `<link rel="stylesheet">`. Every
   class is prefixed `.aicsu-` so nothing collides with the theme. Edits to this
   file go live on push, no manual re-paste needed.
@@ -116,7 +116,7 @@ AI Engine and Tools > Import are both available on production, so either path wo
 
 1. **Custom CSS** — one-time: add a `<link rel="stylesheet" href="https://<pages-url>/aicsu-design-system.css">`
    to the theme (or a header snippet plugin) on production, pointed at the GitHub
-   Pages URL. After that, pushes to `dist/aicsu-design-system.css` go live on both
+   Pages URL. After that, pushes to `docs/aicsu-design-system.css` go live on both
    local and production automatically. No more manual re-paste.
 2. **Pages** — either re-run the same MCP `create_post` calls against production, or
    export from local and use Tools > Import. Prefer MCP for single pages, WXR export

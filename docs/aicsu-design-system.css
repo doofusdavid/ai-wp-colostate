@@ -226,6 +226,11 @@
 }
 
 .aicsu-card {
+  /* Theme's own grid class (s-grid) sets flex: 0 1 auto on columns, which
+     shrink-to-fit each card's content instead of splitting evenly, so
+     widths vary with how much copy each card holds. Force equal width. */
+  flex: 1 1 0 !important;
+  min-width: 0;
   --aicsu-accent: var(--aicsu-green);
   display: flex;
   flex-direction: column;
