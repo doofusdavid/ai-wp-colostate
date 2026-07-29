@@ -2,7 +2,6 @@
    AI @ CSU Fort Collins - Design System Layer
    ai.colostate.edu
    --------------------------------------------------------------------------
-   Paste this whole file into Appearance > Custom CSS (sitewide).
    It adds a namespaced layer on top of the existing theme. It does not
    modify the theme, and every class is prefixed .aicsu- so nothing here
    can collide with theme or Elementor styles.
